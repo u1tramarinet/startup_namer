@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String welcomeMessage = 'Welcome to Flutter';
+    const String appTitle = 'Startup Name Generator';
     return MaterialApp(
-      title: welcomeMessage,
+      title: appTitle,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: welcomeMessage),
+      home: const MyHomePage(title: appTitle),
     );
   }
 }
