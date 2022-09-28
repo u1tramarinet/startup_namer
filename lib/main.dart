@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'MyHomePage.dart';
+import 'package:startup_namer/RandomWords.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String appTitle = 'Startup Name Generator';
     return MaterialApp(
-      title: appTitle,
+      title: 'Startup Name Generator',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: appTitle),
+          appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+      )),
+      home: const RandomWords(),
     );
   }
 }
